@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.15.5"
+  },
   "scripts": {
+    "start": "node dist/index.js",
     "dev:server": "ts-node-dev src/index.ts",
     "dev:client": "npm start --prefix client",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
@@ -28,6 +32,7 @@
     "eslint": "^7.21.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "heroku": "^7.50.0",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.2.3"
   }
