@@ -8,7 +8,8 @@
     "dev:client": "npm start --prefix client",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "lint": "eslint src/**",
-    "build": "rm -rf ./dist && npx tsc && npm run build --prefix client"
+    "build:client": "cd ./client && npm i && npm run build && cd ../",
+    "build": "rm -rf ./dist && npx tsc && npm run build:client"
   },
   "keywords": [],
   "author": "",
