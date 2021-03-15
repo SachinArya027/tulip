@@ -13,7 +13,7 @@
     "dev:client": "npm start --prefix client",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "lint": "eslint src/**",
-    "build:client": "cd ./client && npm i && npm run build && cd ../",
+    "build:client": "cd ./client && npm i --production && npm run build && cd ../",
     "build:server": "rm -rf ./dist && npx tsc",
     "build": "npm run build:server && npm run build:client"
   },
