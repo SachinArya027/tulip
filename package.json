@@ -15,7 +15,9 @@
     "lint": "eslint src/**",
     "build:client": "cd ./client && npm i --production && npm run build && cd ../",
     "build:server": "rm -rf ./dist && npx tsc",
-    "build": "npm run build:server && npm run build:client"
+    "build": "npm run build:server && npm run build:client",
+    "test:client": "npm run test --prefix client",
+    "test": "npm run test:client"
   },
   "keywords": [],
   "author": "",
